@@ -1,10 +1,31 @@
 import Image from "next/image";
 import Hero from "./components/Hero";
+import Contact from "./components/Contact";
+import Features from "./components/Features";
+import MentorsCmp from "./components/Mentors";
 
 export default function Home() {
   return (
-   <div>
-    <Hero/>
-   </div>
+    <div className="">
+      <Hero />
+      <div className="md:px-4 my-14">
+        <div className="container m-auto px-4 md:px-0">
+          <div className="text-2xl text-center mb-8">Features</div>
+          <Features />
+        </div>
+      </div>
+      <div className="md:px-4 mt-8 my-14">
+        <div className="container m-auto px-4 md:px-0">
+          <div className="text-2xl text-center mb-8">Our Mentors</div>
+          <MentorsCmp />
+        </div>
+      </div>
+      <div className="md:px-4 mt-8">
+        <div className="container m-auto px-4 md:px-0">
+          <div className="text-2xl text-center">Contact us</div>
+        </div>
+      </div>
+      <Contact />
+    </div>
   );
 }
