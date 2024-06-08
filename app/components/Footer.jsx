@@ -22,7 +22,7 @@ export default function Footer() {
         href: "/contact"
     }]
     return (
-        <div className="bg-gray-900 border-t-[1px] border-gray-800">
+        <div className="bg-gray-900 border-t-[1px] border-gray-800 mt-16">
             <div className="container m-auto">
                 <div className="px-4 flex flex-col items-center gap-8 lg:flex-row py-6 justify-between">
                     <div className="left flex flex-col items-center justify-center lg:flex-row gap-8">

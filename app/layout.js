@@ -17,12 +17,12 @@ export default function RootLayout({ children }) {
       <body
         className={`${inter.className} ${
           pathname.startsWith("/admin") ? "flex flex-col md:flex-row" : ""
-        }`}
+        } min-h-screen`}
       >
         {pathname.startsWith("/admin") ? <Sidebar /> : <Navbar />}
         {/* <Navbar /> */}
-        <div className="min-h-screen">{children}</div>
-        <Footer />
+        {children}
+        {!pathname.startsWith("/admin") && <Footer />}
       </body>
     </html>
   );

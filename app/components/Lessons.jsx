@@ -28,11 +28,10 @@ export default function Lessons() {
                         </div>
                         <div className="right mt-4 space-y-2 sm:mt-0 sm:py-4 sm:px-4 flex flex-col sm:w-full">
                             <div className="tag flex items-center justify-between">
-                                <div className="lesson font-bold text-sky-500">Lesson 1</div>
-                                <div className="time text-gray-200">25:35</div>
+                                <div className="lesson font-bold text-sky-500">{item.lessonTag}</div>
                             </div>
-                            <div className="title font-semibold text-lg">Introduction to computer science</div>
-                            <div className="para text-gray-300">We will be discussing the important subjects within the scope of computer science.</div>
+                            <div className="title font-semibold text-lg">{item.title}</div>
+                            <div className="para text-gray-300">{item.description}</div>
                         </div>
                     </Link>
                 )) : <>

@@ -85,10 +85,6 @@ export async function PUT(req, res) {
   const cookieStore = cookies();
   const token = cookieStore.get("token");
 
-  let filter = [];
-  AllRecords.forEach((item) => {
-    filter.push({ _id: item._id });
-  });
   if (token) {
     // checks if token is vailed or not
     try {
