@@ -9,11 +9,11 @@ export async function GET() {
 
     if (allEntries.length == 0) {
       await Mentor.create(
-        { name: "Mentor Name", imageURL: "/images/m1.png" },
-        { name: "Mentor Name", imageURL: "/images/m1.png" },
-        { name: "Mentor Name", imageURL: "/images/m1.png" },
-        { name: "Mentor Name", imageURL: "/images/m1.png" },
-        { name: "Mentor Name", imageURL: "/images/m1.png" }
+        { name: "Harpreet Singh", imageURL: "/images/m1.png" },
+        { name: "Shubham Kumar", imageURL: "/images/m2.png" },
+        { name: "Kunal Mehta", imageURL: "/images/m3.png" },
+        { name: "Rajeev Sharma", imageURL: "/images/m4.png" },
+        { name: "Sunil Yadav", imageURL: "/images/m5.png" }
       );
 
       let allData = await Mentor.find({});

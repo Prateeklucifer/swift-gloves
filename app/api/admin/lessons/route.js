@@ -55,7 +55,8 @@ export async function POST(req, res) {
           await Lessons.create({
             lessonTag: "DSA",
             title: "Inro to Data Science",
-            videoURL: "/videos/1.mp4",
+            videoURL: "videos/1.mp4",
+            imageURL: "images/1.png",
             description: "Discription here",
           });
           return NextResponse.json(
@@ -99,6 +100,7 @@ export async function PUT(req, res) {
               lessonTag: item.lessonTag,
               title: item.title,
               videoURL: item.videoURL,
+              imageURL: item.imageURL,
               description: item.description,
             });
           });

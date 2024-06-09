@@ -24,7 +24,7 @@ export default function PricingPage() {
                     <div className="box p-4 ring-1 ring-sky-400 rounded-md">
                         <div className="heading font-semibold text-lg">Freelancer</div>
                         <div className="para text-gray-200 py-2">The essentials to provide your best work for clients.</div>
-                        <div className="pricing flex items-end text-gray-200 py-2"><span className="text-3xl font-bold">$15</span>/month</div>
+                        <div className="pricing flex items-end text-gray-200 py-2"><span className="text-3xl font-bold">₹15</span>/month</div>
                         <button className="py-2 my-4 bg-sky-500/90 w-full text-gray-200 rounded-md">Buy plan</button>
                         <div className="benifits flex gap-4 flex-col">
                             <div className="benifit flex items-center gap-4 text-gray-200"><span className="icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-sky-400">

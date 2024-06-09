@@ -78,6 +78,16 @@ export default function AdminLessons() {
         }
 
     }
+    const updateImageURL = (event, id) => {
+        let data = [...lessons]
+
+        let donorIndex = data.findIndex((item) => item._id == id)
+        if (donorIndex != -1) {
+            data[donorIndex].imageURL = event.target.value
+            setLessons(data)
+        }
+
+    }
     const updateDescription = (event, id) => {
         let data = [...lessons]
 
@@ -182,6 +192,12 @@ export default function AdminLessons() {
                                         <div className="block py-2">videoURL</div>
                                         <input type="text" name="videoURL" id="videoURL" className="w-full px-2 py-2 ring-2 outline-none rounded-lg bg-gray-800 ring-gray-700 focus:ring-sky-500" value={item.videoURL} onChange={(e) => {
                                             updateVideoURL(e, item._id)
+                                        }} />
+                                    </label>
+                                    <label htmlFor="imageURL">
+                                        <div className="block py-2">imageURL</div>
+                                        <input type="text" name="imageURL" id="imageURL" className="w-full px-2 py-2 ring-2 outline-none rounded-lg bg-gray-800 ring-gray-700 focus:ring-sky-500" value={item.imageURL} onChange={(e) => {
+                                            updateImageURL(e, item._id)
                                         }} />
                                     </label>
                                     <label htmlFor="description">

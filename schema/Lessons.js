@@ -9,9 +9,13 @@ const userSchema = new Schema(
       type: String,
       required: [true, "Lesson title is required"],
     },
+    imageURL: {
+      type: String,
+      required: [true, "Lesson image url is required"],
+    },
     videoURL: {
       type: String,
-      required: [true, "Lesson url is required"],
+      required: [true, "Lesson video url is required"],
     },
     description: {
       type: String,

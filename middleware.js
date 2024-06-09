@@ -32,4 +32,9 @@ export async function middleware(request) {
         }
 
     }
+
+    if (request.nextUrl.pathname == "/admin") {
+        return NextResponse.redirect(new URL("/admin/mentors", request.url)); // if token is vailed redirect the user
+      }
+
 }
