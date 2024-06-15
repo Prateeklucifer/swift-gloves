@@ -95,13 +95,13 @@ export default function AdminFeatures() {
                             <div className="faq flex flex-col" key={index}>
                                 <label htmlFor="name">
                                     <div className="block py-2">Title</div>
-                                    <input type="text" name="name" id="name" className="w-full px-2 py-2 ring-2 outline-none rounded-lg bg-gray-800 ring-gray-700 focus:ring-sky-500" value={item.name} onChange={(e) => {
+                                    <input type="text" name="name" id="name" className="w-full px-2 py-2 ring-2 outline-none rounded-lg bg-gray-800 ring-gray-700 focus:ring-[#00FFFF]" value={item.name} onChange={(e) => {
                                         updateName(e, index)
                                     }} />
                                 </label>
                                 <label htmlFor="url">
-                                    <div className="block py-2">Title</div>
-                                    <input type="text" name="url" id="url" className="w-full px-2 py-2 ring-2 outline-none rounded-lg bg-gray-800 ring-gray-700 focus:ring-sky-500" value={item.imageURL} onChange={(e) => {
+                                    <div className="block py-2">image url</div>
+                                    <input type="text" name="url" id="url" className="w-full px-2 py-2 ring-2 outline-none rounded-lg bg-gray-800 ring-gray-700 focus:ring-[#00FFFF]" value={item.imageURL} onChange={(e) => {
                                         updateImageURL(e, index)
                                     }} />
                                 </label>
@@ -109,7 +109,7 @@ export default function AdminFeatures() {
                         ))}
                     </div>
                     <div className="buttons my-4 flex items-center justify-end">
-                        <button className="bg-sky-600 text-white py-[2px] px-4 rounded-md w-fit" onClick={() => {
+                        <button className="bg-[#00FFFF]/60 text-white py-[2px] px-4 rounded-md w-fit" onClick={() => {
                             updateData()
                         }}>Save</button>
                     </div>

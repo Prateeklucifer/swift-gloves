@@ -94,13 +94,13 @@ export default function AdminFeatures() {
                             <div className="faq flex flex-col" key={index}>
                                 <label htmlFor="name">
                                     <div className="block py-2">Title</div>
-                                    <input type="text" name="name" id="name" className="w-full px-2 py-2 ring-2 outline-none rounded-lg bg-gray-800 ring-gray-700 focus:ring-sky-500" value={item.title} onChange={(e) => {
+                                    <input type="text" name="name" id="name" className="w-full px-2 py-2 ring-2 outline-none rounded-lg bg-gray-800 ring-gray-700 focus:ring-[#00FFFF]" value={item.title} onChange={(e) => {
                                         updateTitle(e, index)
                                     }} />
                                 </label>
                                 <label htmlFor="para">
                                     <div className="block py-2">Paragraph</div>
-                                    <textarea name="para" id="para" className="w-full px-2 py-2 ring-2 outline-none rounded-lg bg-gray-800 ring-gray-700 focus:ring-sky-500" value={item.paragraph} onChange={(e) => {
+                                    <textarea name="para" id="para" className="w-full px-2 py-2 ring-2 outline-none rounded-lg bg-gray-800 ring-gray-700 focus:ring-[#00FFFF]" value={item.paragraph} onChange={(e) => {
                                         updateParagraph(e, index)
                                     }}></textarea>
                                 </label>
@@ -108,7 +108,7 @@ export default function AdminFeatures() {
                         ))}
                     </div>
                     <div className="buttons my-4 flex items-center justify-end">
-                        <button className="bg-sky-600 text-white py-[2px] px-4 rounded-md self-end w-fit" onClick={() => {
+                        <button className="bg-[#00FFFF]/60 text-white py-[2px] px-4 rounded-md self-end w-fit" onClick={() => {
                             updateData()
                         }}>Save</button>
                     </div>

@@ -119,7 +119,7 @@ export default function AdminFeatures() {
             />
             <div className="md:mx-4">
                 <div className="container m-auto px-4 md:px-0">
-                    <div className="heading text-2xl font-semibold text-center my-4">Lessons</div>
+                    <div className="heading text-2xl font-semibold text-center my-4">Pricing</div>
                     <div className="faqs flex flex-col gap-6">
                         {pricing?.map((item, index) => (
                             <details className="group border-b-[1px] py-4 border-gray-700 w-full cursor-pointer" key={index} open>
@@ -132,43 +132,43 @@ export default function AdminFeatures() {
                                 <div className="faq flex flex-col my-2">
                                     <label htmlFor="name">
                                         <div className="py-2 flex items-center justify-between">Title </div>
-                                        <input type="text" name="name" id="name" className="w-full px-2 py-2 ring-2 outline-none rounded-lg bg-gray-800 ring-gray-700 focus:ring-sky-500" value={item.title} onChange={(e) => {
+                                        <input type="text" name="name" id="name" className="w-full px-2 py-2 ring-2 outline-none rounded-lg bg-gray-800 ring-gray-700 focus:ring-[#00FFFF]" value={item.title} onChange={(e) => {
                                             updateTitle(e, index)
                                         }} />
                                     </label>
                                     <label htmlFor="description">
                                         <div className="block py-2">description</div>
-                                        <input type="text" name="description" id="description" className="w-full px-2 py-2 ring-2 outline-none rounded-lg bg-gray-800 ring-gray-700 focus:ring-sky-500" value={item.description} onChange={(e) => {
+                                        <input type="text" name="description" id="description" className="w-full px-2 py-2 ring-2 outline-none rounded-lg bg-gray-800 ring-gray-700 focus:ring-[#00FFFF]" value={item.description} onChange={(e) => {
                                             updateDescription(e, index)
                                         }} />
                                     </label>
                                     <label htmlFor="price">
                                         <div className="block py-2">price</div>
-                                        <input type="text" name="price" id="price" className="w-full px-2 py-2 ring-2 outline-none rounded-lg bg-gray-800 ring-gray-700 focus:ring-sky-500" value={item.price} onChange={(e) => {
+                                        <input type="text" name="price" id="price" className="w-full px-2 py-2 ring-2 outline-none rounded-lg bg-gray-800 ring-gray-700 focus:ring-[#00FFFF]" value={item.price} onChange={(e) => {
                                             updatePrice(e, index)
                                         }} />
                                     </label>
                                     <label htmlFor="benifit1">
                                         <div className="block py-2">benifit1</div>
-                                        <input type="text" name="benifit1" id="benifit1" className="w-full px-2 py-2 ring-2 outline-none rounded-lg bg-gray-800 ring-gray-700 focus:ring-sky-500" value={item.benifit1} onChange={(e) => {
+                                        <input type="text" name="benifit1" id="benifit1" className="w-full px-2 py-2 ring-2 outline-none rounded-lg bg-gray-800 ring-gray-700 focus:ring-[#00FFFF]" value={item.benifit1} onChange={(e) => {
                                             updateBenifit1(e, index)
                                         }} />
                                     </label>
                                     <label htmlFor="benifit2">
                                         <div className="block py-2">benifit2</div>
-                                        <input type="text" name="benifit2" id="benifit2" className="w-full px-2 py-2 ring-2 outline-none rounded-lg bg-gray-800 ring-gray-700 focus:ring-sky-500" value={item.benifit2} onChange={(e) => {
+                                        <input type="text" name="benifit2" id="benifit2" className="w-full px-2 py-2 ring-2 outline-none rounded-lg bg-gray-800 ring-gray-700 focus:ring-[#00FFFF]" value={item.benifit2} onChange={(e) => {
                                             updateBenifit2(e, index)
                                         }} />
                                     </label>
                                     <label htmlFor="benifit3">
                                         <div className="block py-2">benifit3</div>
-                                        <input type="text" name="benifit3" id="benifit3" className="w-full px-2 py-2 ring-2 outline-none rounded-lg bg-gray-800 ring-gray-700 focus:ring-sky-500" value={item.benifit3} onChange={(e) => {
+                                        <input type="text" name="benifit3" id="benifit3" className="w-full px-2 py-2 ring-2 outline-none rounded-lg bg-gray-800 ring-gray-700 focus:ring-[#00FFFF]" value={item.benifit3} onChange={(e) => {
                                             updateBenifit3(e, index)
                                         }} />
                                     </label>
                                     <label htmlFor="benifit4">
                                         <div className="block py-2">benifit4</div>
-                                        <input type="text" name="benifit4" id="benifit4" className="w-full px-2 py-2 ring-2 outline-none rounded-lg bg-gray-800 ring-gray-700 focus:ring-sky-500" value={item.benifit4} onChange={(e) => {
+                                        <input type="text" name="benifit4" id="benifit4" className="w-full px-2 py-2 ring-2 outline-none rounded-lg bg-gray-800 ring-gray-700 focus:ring-[#00FFFF]" value={item.benifit4} onChange={(e) => {
                                             updateBenifit4(e, index)
                                         }} />
                                     </label>
@@ -179,7 +179,7 @@ export default function AdminFeatures() {
 
                     </div>
                     <div className="buttons my-4 flex flex-col gap-4">
-                        <button className="bg-sky-500/90 text-white py-[2px] px-4 rounded-md w-fit self-end" onClick={() => { updateData() }}>Save</button>
+                        <button className="bg-[#00FFFF]/60 text-white py-[2px] px-4 rounded-md w-fit self-end" onClick={() => { updateData() }}>Save</button>
                     </div>
                 </div>
             </div>

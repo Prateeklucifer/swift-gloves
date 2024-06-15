@@ -178,31 +178,31 @@ export default function AdminLessons() {
                                 <div className="faq flex flex-col my-2">
                                     <label htmlFor="name">
                                         <div className="py-2 flex items-center justify-between">Title </div>
-                                        <input type="text" name="name" id="name" className="w-full px-2 py-2 ring-2 outline-none rounded-lg bg-gray-800 ring-gray-700 focus:ring-sky-500" value={item.title} onChange={(e) => {
+                                        <input type="text" name="name" id="name" className="w-full px-2 py-2 ring-2 outline-none rounded-lg bg-gray-800 ring-gray-700 focus:ring-[#00FFFF]" value={item.title} onChange={(e) => {
                                             updateTitle(e, item._id)
                                         }} />
                                     </label>
                                     <label htmlFor="lessonTag">
                                         <div className="block py-2">lessonTag</div>
-                                        <input type="text" name="lessonTag" id="lessonTag" className="w-full px-2 py-2 ring-2 outline-none rounded-lg bg-gray-800 ring-gray-700 focus:ring-sky-500" value={item.lessonTag} onChange={(e) => {
+                                        <input type="text" name="lessonTag" id="lessonTag" className="w-full px-2 py-2 ring-2 outline-none rounded-lg bg-gray-800 ring-gray-700 focus:ring-[#00FFFF]" value={item.lessonTag} onChange={(e) => {
                                             updateLessonTag(e, item._id)
                                         }} />
                                     </label>
                                     <label htmlFor="videoURL">
                                         <div className="block py-2">videoURL</div>
-                                        <input type="text" name="videoURL" id="videoURL" className="w-full px-2 py-2 ring-2 outline-none rounded-lg bg-gray-800 ring-gray-700 focus:ring-sky-500" value={item.videoURL} onChange={(e) => {
+                                        <input type="text" name="videoURL" id="videoURL" className="w-full px-2 py-2 ring-2 outline-none rounded-lg bg-gray-800 ring-gray-700 focus:ring-[#00FFFF]" value={item.videoURL} onChange={(e) => {
                                             updateVideoURL(e, item._id)
                                         }} />
                                     </label>
                                     <label htmlFor="imageURL">
                                         <div className="block py-2">imageURL</div>
-                                        <input type="text" name="imageURL" id="imageURL" className="w-full px-2 py-2 ring-2 outline-none rounded-lg bg-gray-800 ring-gray-700 focus:ring-sky-500" value={item.imageURL} onChange={(e) => {
+                                        <input type="text" name="imageURL" id="imageURL" className="w-full px-2 py-2 ring-2 outline-none rounded-lg bg-gray-800 ring-gray-700 focus:ring-[#00FFFF]" value={item.imageURL} onChange={(e) => {
                                             updateImageURL(e, item._id)
                                         }} />
                                     </label>
                                     <label htmlFor="description">
                                         <div className="block py-2">Blood Type</div>
-                                        <input type="text" name="description" id="description" className="w-full px-2 py-2 ring-2 outline-none rounded-lg bg-gray-800 ring-gray-700 focus:ring-sky-500" value={item.description} onChange={(e) => {
+                                        <input type="text" name="description" id="description" className="w-full px-2 py-2 ring-2 outline-none rounded-lg bg-gray-800 ring-gray-700 focus:ring-[#00FFFF]" value={item.description} onChange={(e) => {
                                             updateDescription(e, item._id)
                                         }} />
                                     </label>
@@ -216,7 +216,7 @@ export default function AdminLessons() {
                         <button className="outline-dashed outline-1 py-1 rounded-sm outline-gray-600 bg-gray-800 hover:bg-gray-800/80 flex items-center justify-center text-sm" onClick={() => {
                             addFeild()
                         }}> <span><IoIosAdd size={26} /></span>Add Column</button>
-                        <button className="text-white px-4 py-2 rounded-md bg-sky-500 w-full" onClick={() => { updateRecords() }}>Save</button>
+                        <button className="text-white px-4 py-2 rounded-md bg-[#00FFFF]/60 w-full" onClick={() => { updateRecords() }}>Save</button>
                     </div>
                 </div>
             </div>
