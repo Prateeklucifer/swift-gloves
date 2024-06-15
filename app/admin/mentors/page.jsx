@@ -22,7 +22,7 @@ export default function AdminFeatures() {
 
     const updateImageURL = (event, index) => {
         let newData = [...mentors]
-        newData[index].imageUrl = event.target.value
+        newData[index].imageURL = event.target.value
         setMentors(newData)
     }
 

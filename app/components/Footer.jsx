@@ -27,7 +27,7 @@ export default function Footer() {
                 <div className="px-4 flex flex-col items-center gap-8 lg:flex-row py-6 justify-between">
                     <div className="left flex flex-col items-center justify-center lg:flex-row gap-8">
                         <div className="heading">
-                            <Link href={"/"} className="logo font-semibold text-xl">Pixelated<span className="text-sky-400">Professor</span></Link>
+                            <Link href={"/"} className="logo font-semibold text-xl">Pixelated<span className="text-[#00FFFF]">Professor</span></Link>
 
                         </div>
                         <div className="copy"> &copy; 2024 PixelatedProfessor </div>

@@ -37,12 +37,12 @@ export default function Lessons() {
                 src={`/${item.imageURL}`}
                 height={150}
                 width={150}
-                className="rounded-lg w-full h-full object-cover"
+                className="rounded-lg w-full object-cover"
               />
             </div>
             <div className="right mt-4 space-y-2 sm:mt-0 sm:py-4 sm:px-4 flex flex-col sm:w-full">
               <div className="tag flex items-center justify-between">
-                <div className="lesson font-bold text-sky-500">
+                <div className="lesson font-bold text-[#00FFFF]">
                   {item.lessonTag}
                 </div>
               </div>

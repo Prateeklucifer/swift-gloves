@@ -11,7 +11,7 @@ export default function Hero() {
                     <div className="para text-white mt-3  md:text-center">The Pixelated Professor is an online learning platform that provides interactive courses and projects in Computer Science to high schoolers and adults of all backgrounds.</div>
 
                     <div className="button gap-6 flex items-center md:mt-4 text-sm ">
-                        <button className="bg-sky-500 text-white py-2 px-4 rounded-lg" >Get started</button>
+                        <button className="bg-[#00FFFF]/60 text-white py-2 px-4 rounded-lg" >Get started</button>
                         <button className="bg-gray-700 text-white py-2 px-4 rounded-lg" >Learn more</button>
                     </div>
                 </div>

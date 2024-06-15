@@ -1,6 +1,5 @@
 "use client";
 
-import { HiBars3 } from "react-icons/hi2";
 import { HiOutlineX } from "react-icons/hi";
 import { HiOutlineBars3BottomRight } from "react-icons/hi2";
 
@@ -44,8 +43,8 @@ export default function Navbar() {
   return (
     <nav className="text-white py-8 px-4">
       <div className="container m-auto flex items-center justify-between">
-        <Link href={"/"} className="logo font-semibold text-xl">
-          Pixelated<span className="text-sky-400">Professor</span>
+        <Link href={"/"} className="logo font-semibold text-2xl">
+          Pixelated<span className="text-[#00FFFF]">Professor</span>
         </Link>
         <button
           className="forMobi md:hidden"
@@ -98,7 +97,7 @@ export default function Navbar() {
             <li key={key}>
               <Link
                 href={link.href}
-                className="text-sky-50 text-sm hover:text-sky-400"
+                className="text-sky-50 text-lg hover:text-[#00FFFF]"
               >
                 {link.name}
               </Link>

@@ -10,7 +10,7 @@ export default function LessonPage() {
                     <div className="para text-white mt-3 md:text-center md:px-20 xl:px-44 2xl:px-56">With our computer science course We gives you the knowledge and confidence you need to excel in software engineering, and more.</div>
 
                     <div className="button gap-6 flex flex-col items-center mt-4 text-sm sm:flex-row w-full md:justify-center">
-                        <button className="bg-sky-500 text-white py-2 px-4 rounded-lg w-full sm:w-fit" >Get full access</button>
+                        <button className="bg-[#00FFFF]/60 text-white py-2 px-4 rounded-lg w-full sm:w-fit" >Get full access</button>
                         <button className="bg-gray-700 text-white py-2 px-4 rounded-lg w-full sm:w-fit" >Request a topic</button>
                     </div>
                 </div>

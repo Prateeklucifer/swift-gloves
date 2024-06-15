@@ -10,19 +10,19 @@ export default function Home() {
       <Hero />
       <div className="md:px-4 my-14">
         <div className="container m-auto px-4 md:px-0">
-          <div className="text-2xl text-center mb-8">Features</div>
+          <div className="text-2xl text-center mb-8 font-bold text-[#00FFFF]">Features</div>
           <Features />
         </div>
       </div>
       <div className="md:px-4 mt-8 my-14">
         <div className="container m-auto px-4 md:px-0">
-          <div className="text-2xl text-center mb-8">Our Mentors</div>
+          <div className="text-2xl text-center mb-8 font-bold text-[#00FFFF]">Our Mentors</div>
           <MentorsCmp />
         </div>
       </div>
       <div className="md:px-4 mt-8">
         <div className="container m-auto px-4 md:px-0">
-          <div className="text-2xl text-center">Contact us</div>
+          <div className="text-2xl text-center font-bold text-[#00FFFF]">Contact us</div>
         </div>
       </div>
       <Contact />
