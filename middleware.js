@@ -29,6 +29,8 @@ export async function middleware(request) {
             if(response.status != 200){
                 return NextResponse.redirect(new URL('/login', request.url)) // if token is vailed redirect the user
             }
+        }else{
+            return NextResponse.redirect(new URL('/login', request.url))
         }
 
     }

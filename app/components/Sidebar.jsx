@@ -101,6 +101,7 @@ export default function Sidebar() {
               </Link>
             </li>
           ))}
+          <button className="bg-gray-800 text-white py-1 rounded-sm" onClick={()=>{removeToken()}}>logout</button>
         </ul>
       </div>
       <ul className="hidden md:flex flex-col gap-2 my-4 w-full">
