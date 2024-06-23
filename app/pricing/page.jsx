@@ -1,8 +1,11 @@
 "use client"
 
+import { useRouter } from 'next/navigation'
 import { useEffect, useState } from 'react'
 
 export default function PricingPage() {
+
+    const router = useRouter()
     const [pricing, setPricing] = useState(undefined)
 
     const getAllPricing = async () => {
@@ -25,7 +28,9 @@ export default function PricingPage() {
                         <div className="heading font-semibold text-lg">{item.title}</div>
                         <div className="para text-gray-200 py-2">{item.description}</div>
                         <div className="pricing flex items-end text-gray-200 py-2"><span className="text-3xl font-bold">₹{item.price}</span>/month</div>
-                        <button className="py-2 my-4 bg-[#00FFFF]/60 w-full text-gray-200 rounded-md">Buy plan</button>
+                        <button className="py-2 my-4 bg-[#00FFFF]/60 w-full text-gray-200 rounded-md" onClick={()=>{
+                            router.push('/checkout')
+                        }}>Buy plan</button>
                         <div className="benifits flex gap-4 flex-col">
                             <div className="benifit flex items-center gap-4 text-gray-200"><span className="icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-[#00FFFF]">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5" />

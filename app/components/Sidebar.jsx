@@ -32,6 +32,10 @@ export default function Sidebar() {
       name: "Enquiries",
       href: "/admin/contact",
     },
+    {
+      name: "Payments",
+      href: "/admin/checkout",
+    },
   ];
 
   let path = usePathname();
