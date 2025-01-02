@@ -15,20 +15,20 @@ export default function Navbar() {
       href: "/",
     },
     {
-      name: "Mentors",
-      href: "/mentors",
+      name: "Trainers",
+      href: "/trainers",
     },
     {
       name: "Features",
       href: "/features",
     },
     {
-      name: "Lessons",
-      href: "/lessons",
-    },
-    {
       name: "Pricing",
       href: "/pricing",
+    },
+    {
+      name: "About Us",
+      href: "/about",
     },
     {
       name: "Contact Us",
@@ -44,7 +44,7 @@ export default function Navbar() {
     <nav className="text-white py-8 px-4">
       <div className="container m-auto flex items-center justify-between">
         <Link href={"/"} className="logo font-semibold text-2xl">
-          Pixelated<span className="text-[#00FFFF]">Professor</span>
+          Swift<span className="text-[#00FFFF]">Gloves</span>
         </Link>
         <button
           className="forMobi md:hidden"

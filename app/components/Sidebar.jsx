@@ -13,16 +13,16 @@ export default function Sidebar() {
 
   const links = [
     {
-      name: "Mentors",
-      href: "/admin/mentors",
+      name: "Trainers",
+      href: "/admin/trainers",
     },
     {
       name: "Features",
       href: "/admin/features",
     },
     {
-      name: "Lessons",
-      href: "/admin/lessons",
+      name: "About",
+      href: "/admin/about",
     },
     {
       name: "Pricing",
@@ -31,11 +31,7 @@ export default function Sidebar() {
     {
       name: "Enquiries",
       href: "/admin/contact",
-    },
-    {
-      name: "Payments",
-      href: "/admin/checkout",
-    },
+    }
   ];
 
   let path = usePathname();
@@ -70,17 +66,15 @@ export default function Sidebar() {
       </button>
 
       <Link href={"/admin"} className="logo font-semibold text-xl">
-        Pixelated<span className="text-[#00FFFF]">Professor</span>
+        Swift<span className="text-[#00FFFF]">Gloves</span>
       </Link>
       <div
-        className={`${
-          isOpen ? "flex" : "hidden"
-        } overlay absolute top-0 left-0 h-screen w-screen bg-black/40 z-10`}
+        className={`${isOpen ? "flex" : "hidden"
+          } overlay absolute top-0 left-0 h-screen w-screen bg-black/40 z-10`}
       ></div>
       <div
-        className={`${
-          isOpen ? "flex z-20 left-0" : "hidden left-32 "
-        } flex-col sidebar absolute top-0  h-screen bg-white w-60 text-neutral-900 py-3 px-4 `}
+        className={`${isOpen ? "flex z-20 left-0" : "hidden left-32 "
+          } flex-col sidebar absolute top-0  h-screen bg-white w-60 text-neutral-900 py-3 px-4 `}
       >
         <div className="header flex justify-start items-center">
           <button
@@ -105,7 +99,7 @@ export default function Sidebar() {
               </Link>
             </li>
           ))}
-          <button className="bg-gray-800 text-white py-1 rounded-sm" onClick={()=>{removeToken()}}>logout</button>
+          <button className="bg-gray-800 text-white py-1 rounded-sm" onClick={() => { removeToken() }}>logout</button>
         </ul>
       </div>
       <ul className="hidden md:flex flex-col gap-2 my-4 w-full">
@@ -113,11 +107,10 @@ export default function Sidebar() {
           <li key={key} className="">
             <Link
               href={link.href}
-              className={` text-sm py-3 px-4 hover:bg-gray-700 block rounded-lg font-bold ${
-                path == link.href
+              className={` text-sm py-3 px-4 hover:bg-gray-700 block rounded-lg font-bold ${path == link.href
                   ? "text-[#00FFFF] bg-gray-700 "
                   : " text-sky-50"
-              }`}
+                }`}
             >
               {link.name}
             </Link>

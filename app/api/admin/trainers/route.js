@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import jsonwebtoken from "jsonwebtoken";
 import { cookies } from "next/headers";
 import ConnectToDB from "@/DB/ConnectToDB";
-import Mentor from "@/schema/Mentor";
+import Trainer from "@/schema/Trainer";
 
 export async function PUT(req, res) {
   const { AllRecords } = await req.json();
@@ -19,7 +19,7 @@ export async function PUT(req, res) {
           ConnectToDB();
 
           AllRecords.map(async (item) => {
-            await Mentor.findByIdAndUpdate(item._id, {
+            await Trainer.findByIdAndUpdate(item._id, {
               name: item.name,
               imageURL: item.imageURL
             });

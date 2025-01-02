@@ -12,6 +12,6 @@ const userSchema = new Schema(
   { timestamps: true }
 );
 
-const Mentor = models.mentors || model("mentors", userSchema);
+const Trainer = models.trainers || model("trainers", userSchema);
 
-export default Mentor;
+export default Trainer;

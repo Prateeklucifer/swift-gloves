@@ -10,16 +10,16 @@ export async function GET() {
         // if all entries 0 then create 3 of them
 
         if (allEntries.length == 0) {
-            await Features.create({ title: "Build a strong foundation", paragraph: "Our curriculum starts with the core concepts of computer science, like data structures, algorithms, and object-oriented programming. Gain a solid understanding of these crucial building blocks before diving into more advanced topics." }, { title: "Explore In-Demand Skills", paragraph: "Learn the most relevant technologies for today's job market. Take courses in Full Stack Development, covering both front-end (HTML, CSS, JavaScript) and back-end (Python, Java, databases) development." }, { title: "Learn at Your Pace", paragraph: "Whether you're a beginner or a seasoned programmer, we offer a variety of learning formats. Choose from interactive video lectures, hands-on coding exercises, and self-paced study materials." }, { title: "Future-proof your career", paragraph: " Technology evolves rapidly. We offer constantly updated courses and resources to keep you ahead of the curve. Learn about the newest frameworks, languages, and industry best practices." })
+            await Features.create({ title: "Train with the Best", paragraph: "Our certified trainers bring years of experience in professional boxing and fitness training. Whether you're a beginner or aiming to go pro, our coaches are here to guide you with personalized attention, expert techniques, and constant motivation to help you reach your peak potential." }, { title: "Train Like a Champion", paragraph: "Our academy is equipped with top-notch boxing rings, advanced training equipment, and a dedicated fitness zone to ensure you have everything you need for a comprehensive workout experience. Experience a space designed to inspire greatness." }, { title: "Start Strong, Stay Strong", paragraph: "From beginners stepping into the ring for the first time to seasoned fighters refining their skills, our diverse programs are tailored to all fitness levels and goals. Choose from technique-based training, fitness sessions, or sparring programs to suit your journey." }, { title: "Be Part of a Fighting Family", paragraph: "At our academy, you’re not just another trainee—you’re part of a community. Train alongside like-minded individuals, celebrate milestones together, and thrive in an environment that encourages discipline, respect, and camaraderie. Together, we rise." })
 
             let allData = await Features.find({})
 
-            return NextResponse.json({data: allData})
-        }else{
-            return NextResponse.json({data: allEntries})
+            return NextResponse.json({ data: allData })
+        } else {
+            return NextResponse.json({ data: allEntries })
         }
 
     } catch (err) {
-        return NextResponse.json({ message: "something went wrong" }, {status: 500})
+        return NextResponse.json({ message: "something went wrong" }, { status: 500 })
     }
 }

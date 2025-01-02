@@ -10,7 +10,7 @@ const userSchema = new Schema(
       required: [true, "description is required"],
     },
     price: {
-      type: Number,
+      type: String,
       required: [true, "price is required"],
     },
     benifit1: {

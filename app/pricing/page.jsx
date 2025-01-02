@@ -20,15 +20,15 @@ export default function PricingPage() {
     return (
         <div className="mt-6 container m-auto">
             <div className="info text-[#00FFFF] font-semibold text-center mb-2">Pricing</div>
-            <div className="small-heading text-white text-3xl px-4 font-bold text-center mb-6">Pricing plans for teams of all sizes</div>
-            <div className="para text-lg px-4 text-center text-gray-200">Distinctio et nulla eum soluta et neque labore quibusdam. Saepe et quasi iusto modi velit ut non voluptas in. Explicabo id ut laborum.</div>
+            <div className="small-heading text-white text-3xl px-4 font-bold text-center mb-6">Choose Your Plan and Start Training</div>
+            <div className="para text-lg px-4 text-center text-gray-200">At Swift Gloves, we offer flexible pricing plans to fit every fighter's needs and goals.</div>
             <div className="pricing-sec px-4 mt-14 flex flex-col gap-8 md:px-28 lg:flex-row ">
                 {pricing ? pricing.map((item) => (
                     <div className="box p-4 ring-1 ring-[#00FFFF] rounded-md w-full">
                         <div className="heading font-semibold text-lg">{item.title}</div>
                         <div className="para text-gray-200 py-2">{item.description}</div>
                         <div className="pricing flex items-end text-gray-200 py-2"><span className="text-3xl font-bold">₹{item.price}</span>/month</div>
-                        <button className="py-2 my-4 bg-[#00FFFF]/60 w-full text-gray-200 rounded-md" onClick={()=>{
+                        <button className="py-2 my-4 bg-[#00FFFF]/60 w-full text-gray-200 rounded-md" onClick={() => {
                             router.push('/checkout')
                         }}>Buy plan</button>
                         <div className="benifits flex gap-4 flex-col">
